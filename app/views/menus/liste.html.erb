@@ -1,1 +1,6 @@
 <h1>Voici ta liste de course</h1>
+<ul>
+  <% @liste.each do |key, value| %>
+    <li><%= key %> : <%= value[0] %> - <%= value[1] %></li>
+  <% end %>
+</ul>
