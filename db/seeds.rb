@@ -10,7 +10,7 @@ User.destroy_all
 puts "----- Seeding in process -----"
 
 puts "Creating my user account"
-guillaume = User.create!(email: "negro.guillaume@gmail.com", password: "toto123456")
+guillaume = User.create!(email: "negro.guillaume@gmail.com", password: "password")
 guillaume.confirm
 guillaume.save
 
