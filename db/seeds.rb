@@ -27,7 +27,7 @@ escalope = Ingredient.create(name: "escalope", rayon: "viandes")
 pates = Ingredient.create(name: "pates", rayon: "pates/conserve")
 creme = Ingredient.create(name: "crème", rayon: "produit laitier")
 lardons = Ingredient.create(name: "lardons", rayon: "charcuterie")
-pate_brise = Ingredient.create(name: "Pate brisé", rayon: "produit laitier")
+pate_brise = Ingredient.create(name: "Pate brisé", rayon: "produit/laitier")
 moutarde = Ingredient.create(name: "Moutarde à l'ancienne", rayon: "pates/conserve")
 rape = Ingredient.create(name: "Gruyère rapé", rayon: "produit/laitier")
 
