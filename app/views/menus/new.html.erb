@@ -1,13 +1,15 @@
 <div class="container">
-  <h1>Créé ton menu pour la semaine à partir de tes recettes</h1>
+  <div class="row justify-content-center">
+    <h1 class="text-center">Créé ton menu pour la semaine à partir de tes recettes</h1>
+  </div>
   <div class="form-group">
     <%= form_with url: "/ta_liste", method: :get, class: "form-group" do |form| %>
       <% @semaines.each do |repas| %>
         <div class="row justify-content-center">
-          <div class="col-4">
+          <div class="col-3">
             <%= form.label repas.to_s, repas.to_s, class: "form-control" %>
           </div>
-          <div class="col-4">
+          <div class="col-5">
             <%= form.select "recette du #{repas}", @recettes, 
               { selected: "", prompt: 'Choisis ton plat' }, 
               class: "form-control" %>
@@ -16,7 +18,7 @@
       <% end %>
       <div class="row justify-content-center">
         <div class="col-8">
-          <h3><%= form.submit "Crée ta liste de course", class: "btn btn-primary form-cntrol w-100" %></h3>
+          <h3><%= form.submit "Crée ta liste de course", class: "btn btn-flat form-cntrol w-100" %></h3>
         </div>
       </div>
     <% end %>

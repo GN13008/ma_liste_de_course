@@ -1,22 +1,26 @@
 <h1 class="text-center">Voici ta liste de course</h1>
-
-<% @a_listes.each do |key, value| %>
-  <div class="row justify-content-center">
-    <div class="col-4 mt-4">
-      <h2><%= key %></h2>
-      <% value.each do |hash|%>
-        <div class="row justify-content-center">
-          <div class="col-7">
-            <%= hash[:ingredient] %>
-          </div>
-          <div class="col-3">
-            <%= hash[:quantite] %>
-          </div>
-          <div class="col-2">
-            <%= hash[:unite] %>
-          </div>
+<div class="cards">
+  <% @a_listes.each do |key, value| %>
+    <div class="card-category">
+      <div class="row justify-content-center">
+        <div class="col-10 justify-content-center">
+          <h2><%= key %></h2>
+          <hr>
+          <% value.each do |hash|%>
+            <div class="row justify-content-center">
+              <div class="col-7">
+                <%= hash[:ingredient] %>
+              </div>
+              <div class="col-3">
+                <%= hash[:quantite] %>
+              </div>
+              <div class="col-2">
+                <%= hash[:unite] %>
+              </div>
+            </div>
+          <% end %>
         </div>
-      <% end %>
+      </div>
     </div>
-  </div>
-<% end %>
+  <% end %>
+</div>

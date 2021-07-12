@@ -18,18 +18,18 @@ puts "User is create"
 
 puts "Creating some ingredient"
 
-courgette = Ingredient.create(name: "courgette", rayon: "legumes")
-aubergine = Ingredient.create(name: "aubergine", rayon: "legumes")
-tomate = Ingredient.create(name: "tomate", rayon: "legumes")
-oignon = Ingredient.create(name: "oignon", rayon: "legumes")
-poivron = Ingredient.create(name: "poivron", rayon: "legumes")
-escalope = Ingredient.create(name: "escalope", rayon: "viandes")
-pates = Ingredient.create(name: "pates", rayon: "pates/conserve")
-creme = Ingredient.create(name: "crème", rayon: "produit laitier")
-lardons = Ingredient.create(name: "lardons", rayon: "charcuterie")
-pate_brise = Ingredient.create(name: "Pate brisé", rayon: "produit/laitier")
-moutarde = Ingredient.create(name: "Moutarde à l'ancienne", rayon: "pates/conserve")
-rape = Ingredient.create(name: "Gruyère rapé", rayon: "produit/laitier")
+lardons = Ingredient.create(name: "lardons", rayon: "3-charcuterie")
+courgette = Ingredient.create(name: "courgette", rayon: "1-legumes")
+aubergine = Ingredient.create(name: "aubergine", rayon: "1-legumes")
+tomate = Ingredient.create(name: "tomate", rayon: "1-legumes")
+oignon = Ingredient.create(name: "oignon", rayon: "1-legumes")
+poivron = Ingredient.create(name: "poivron", rayon: "1-legumes")
+escalope = Ingredient.create(name: "escalope", rayon: "2-viandes")
+pates = Ingredient.create(name: "pates", rayon: "5-pates/conserve")
+creme = Ingredient.create(name: "crème", rayon: "4-produit laitier")
+pate_brise = Ingredient.create(name: "Pate brisé", rayon: "4-produit laitier")
+moutarde = Ingredient.create(name: "Moutarde à l'ancienne", rayon: "5-pates/conserve")
+rape = Ingredient.create(name: "Gruyère rapé", rayon: "4-produit laitier")
 
 puts "Ingredients are created"
 
