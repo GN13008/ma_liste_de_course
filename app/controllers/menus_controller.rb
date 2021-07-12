@@ -20,6 +20,7 @@ class MenusController < ApplicationController
     end
     rayons = @liste.values.map {|a| a[2]}
     rayons = rayons.uniq
+    rayons = rayons.sort
     @a_listes = {}
     rayons.each do |rayon|
       @a_listes[rayon] = []
