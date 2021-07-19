@@ -5,7 +5,12 @@ The concept is simple, I had the idea that a shopping list will be easier if we 
 
 So this is the MVP of this idea.
 
-There are many ways of evolutions :
+## Goals and achievement :
+ - Practice my skills in Ruby on rails, Data Base and Design
+ - OG graphe and meta of an app (In progress)
+ - user mail validation (In progress) 
+
+## Ways of evolutions :
  - have an acount and manage recipes (currently on the console / seed)
  - linked the list to a phone app of note
  - use this app to create API and linked it to a react / JS interface
