@@ -1,19 +1,21 @@
-.footer {
-  background: #F4F4F4;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 100px;
+.footer{
   color: rgba(0,0,0,0.4);
 
   a {
     text-decoration: none;
     color: black;
-    opacity: 0.4;
+    opacity: 0.6;
   }
   a:hover {
     opacity: 1;
   }
+}
+.footer-flex {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
 }
 .footer-links {
   display: flex;
@@ -34,4 +36,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.footer-project{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 4em;
+  p {
+    text-align: center;
+    margin : 4px;
+    font-size: 16px;
+  }
 }
