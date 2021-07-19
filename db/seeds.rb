@@ -29,12 +29,15 @@ tomate = Ingredient.create(name: "tomate", rayon: "1-legumes 🥦")
 oignon = Ingredient.create(name: "oignon", rayon: "1-legumes 🥦")
 poivron = Ingredient.create(name: "poivron", rayon: "1-legumes 🥦")
 escalope = Ingredient.create(name: "escalope", rayon: "2-viandes 🥩")
+steak = Ingredient.create(name: "steak", rayon: "2-viandes 🥩")
 crevette = Ingredient.create(name: "crevette", rayon: "2-viandes 🥩")
 poulet = Ingredient.create(name: "poulet", rayon: "2-viandes 🥩")
 pates = Ingredient.create(name: "pates", rayon: "5-pates/conserve 🍝")
+riz = Ingredient.create(name: "riz", rayon: "5-pates/conserve 🍝")
 creme = Ingredient.create(name: "crème", rayon: "4-produit laitier 🥛")
 lait = Ingredient.create(name: "lait", rayon: "4-produit laitier 🥛")
 pate_brise = Ingredient.create(name: "Pate brisé", rayon: "4-produit laitier 🥛")
+mozza = Ingredient.create(name: "Mozza", rayon: "4-produit laitier 🥛")
 moutarde = Ingredient.create(name: "Moutarde à l'ancienne", rayon: "5-pates/conserve 🍝")
 kit_fajitas = Ingredient.create(name: "Kit fajitas", rayon: "6-apero/monde 🍺")
 sauce_sucre = Ingredient.create(name: "sauce sucree", rayon: "6-apero/monde 🍺")
@@ -42,6 +45,10 @@ nouille = Ingredient.create(name: "Nouille Chinoise", rayon: "6-apero/monde 🍺
 chips_triangle = Ingredient.create(name: "chips triangle", rayon: "6-apero/monde 🍺")
 rape = Ingredient.create(name: "Gruyère rapé", rayon: "4-produit laitier 🥛")
 puree = Ingredient.create(name: "purée", rayon: "5-pates/conserve 🍝")
+citron = Ingredient.create(name: "Citron", rayon: "1-legumes 🥦")
+saumon = Ingredient.create(name: "Saumon", rayon: "2-viandes 🥩")
+pain_bruscetta = Ingredient.create(name: "Pain Bruscetta", rayon: "7-autres")
+pain_burger = Ingredient.create(name: "Pain Burger", rayon: "7-autres")
 
 puts "Ingredients are created"
 
@@ -86,6 +93,25 @@ ListeIngredient.create!(recette_id: fajitas.id, ingredient_id: champignon.id, qu
 ListeIngredient.create!(recette_id: fajitas.id, ingredient_id: chips_triangle.id, quantity: 1, unit: "unit")
 ListeIngredient.create!(recette_id: fajitas.id, ingredient_id: guacamole.id, quantity: 1, unit: "unit")
 ListeIngredient.create!(recette_id: fajitas.id, ingredient_id: rape.id, quantity: 1, unit: "unit")
+
+saumon_riz = Recette.create!(name: "Saumon - Riz")
+ListeIngredient.create!(recette_id: saumon_riz.id, ingredient_id: citron.id, quantity: 100, unit: "gr")
+ListeIngredient.create!(recette_id: saumon_riz.id, ingredient_id: riz.id, quantity: 300, unit: "gr")
+ListeIngredient.create!(recette_id: saumon_riz.id, ingredient_id: courgette.id, quantity: 500, unit: "gr")
+ListeIngredient.create!(recette_id: saumon_riz.id, ingredient_id: creme.id, quantity: 50, unit: "ml")
+ListeIngredient.create!(recette_id: saumon_riz.id, ingredient_id: saumon.id, quantity: 480, unit: "gr")
+ListeIngredient.create!(recette_id: saumon_riz.id, ingredient_id: tomate.id, quantity: 200, unit: "gr")
+
+bruschetta = Recette.create!(name: "Bruscetta")
+ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: pain_bruscetta.id, quantity: 1, unit: "unit")
+ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: tomate.id, quantity: 300, unit: "gr")
+ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: jambon.id, quantity: 4, unit: "tranche")
+ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: mozza.id, quantity: 100, unit: "gr")
+
+burger = Recette.create!(name: "Burger")
+ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: pain_burger.id, quantity: 2, unit: "unit")
+ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: steak.id, quantity: 300, unit: "gr")
+ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: harico.id, quantity: 1, unit: "unit")
 
 puts "Recette are done"
 
