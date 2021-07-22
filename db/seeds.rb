@@ -109,10 +109,5 @@ ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: tomate.id, qua
 ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: jambon.id, quantity: 4, unit: "tranche")
 ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: mozza.id, quantity: 100, unit: "gr")
 
-burger = Recette.create!(name: "Burger")
-ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: pain_burger.id, quantity: 2, unit: "unit")
-ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: steak.id, quantity: 300, unit: "gr")
-ListeIngredient.create!(recette_id: bruschetta.id, ingredient_id: harico.id, quantity: 1, unit: "unit")
-
 puts "Recette are done"
 
