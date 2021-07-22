@@ -1,11 +1,11 @@
 class MenusController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :new, :liste ]
   def new
-    @semaines = ["Lundi midi", "Lundi soir", "Mardi midi", "Mardi soir", "Mercredi midi", "Mercredi soir", "Jeudi midi", "Jeudi soir", "Vendredi midi", "Vendredi soir", "Samedi midi", "Samedi soir", "Dimanche midi", "Dimanche soir"]
+    @semaines = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
     @recettes = Recette.all.map {|recette| recette.name}
   end
   def liste
-    @recettes = params.values.first(14)
+    @recettes = params.values.first(7)
     @liste = {}
     @recettes.each do |recette|
       unless recette == ""
