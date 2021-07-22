@@ -1,0 +1,6 @@
+# config/meta.yml
+
+meta_product_name: "Du Menu à l'Assiette"
+meta_title: "Du menu à l'assiette - Façonne ton menu de la semaine, Obtiens ta liste de course."
+meta_description: "Cette application web a pour but de simplifier ta liste de course. Choisis simplement ce que tu souhaites manger et l'application te génère la liste de course appropriée et triée par rayons."
+meta_image: "cover.png" # should exist in `app/assets/images/`
